@@ -1,0 +1,121 @@
+.registerApprovalDetail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    .approvalDetailContent{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #E7EAEE;
+        border-radius: 8px 8px 0px 0px;
+        overflow: hidden;
+        .content-header{
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: #F8F9FA;
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 13px;
+                .userName{
+                    color: #1F2037;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .status{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 1px 4px;
+                    gap: 4px;
+                    border-radius: 4px;
+                }
+            }
+            .info{
+                display: flex;
+                gap: 24px;
+                .info-data{
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+                    .label{
+                        color: #98A2B3;
+                    }
+                    .data{
+                        color: #1F2037;
+                    }
+                }
+            }
+        }
+        .content-data{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin: 24px;
+            overflow: auto;
+            .data-box{
+                width: 1000px;
+                height: fit-content;
+                display: flex;
+                gap: 24px;
+                flex-wrap: wrap;
+                .data-item{
+                    width: 488px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    .item-label{
+                        color: #1F2037;
+                    }
+                    .item-data{
+                        color: #1F2037;
+                        height: 40px;
+                        padding: 0 12px;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 4px;
+                        background: #F8F9FA;
+                        border: 1px solid #E7EAEE;
+                        span{
+                            width: 100%;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .approvalDetailFooter{
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        .btn1{
+            cursor: pointer;
+            color: #FF4C64;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            border: 1px solid #FF4C64;
+        }
+        .btn2{
+            cursor: pointer;
+            color: #FFFFFF;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: #5A4BFF;
+        }
+    }
+}

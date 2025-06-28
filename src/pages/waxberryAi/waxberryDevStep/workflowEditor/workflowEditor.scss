@@ -1,0 +1,170 @@
+.workflowEditor{
+  display: flex;
+  flex: 1;
+  .workflowEditorLeft{
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    border-right: 1px solid var(--bd-color6);
+    .node{
+      cursor: grab;
+      color: var(--text-color1);
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      padding: 4px 12px;
+      background: var(--bg-color41);
+      border-radius: 4px;
+      border: 1px solid var(--bd-color13);
+    }
+  }
+  .reactflow-wrapper{
+    flex: 1;
+    .react-flow{
+      .custom-node{
+        width: 180px;
+        padding: 4px 10px;
+        color: var(--text-color1);
+        background: var(--bg-color26);
+        border-radius: 4px;
+        border: 1px solid var(--bd-color13);
+        .node-name{
+          display: flex;
+          gap: 6px;
+          align-items: center;
+          .label{
+            flex: 1;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .operate{
+            margin-left: auto;
+            display: flex;
+            gap: 4px;
+            svg{
+              cursor: pointer;
+            }
+          }
+        }
+        .react-flow__handle{
+          background-color: #8B81FF;
+          border: 1px solid #8B81FF;
+        }
+      }
+      .react-flow__controls{
+        flex-direction: row;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background: var(--bg-color41);
+        button{
+          background: var(--bg-color41);
+          border: none;
+          color: var(--text-color1);
+        }
+      }
+      .react-flow__attribution{
+        display: none;
+      }
+      .nodeLayout{
+        cursor: pointer;
+        left: 130px;
+        padding: 4px 4px 2px 4px;
+        border-radius: 4px;
+        background: var(--bg-color41);
+      }
+    }
+  }
+}
+
+.ant-drawer{
+  .ant-drawer-content{
+    color: var(--text-color1);
+    background: var(--bg-color42);
+    .ant-drawer-header{
+      border-bottom: 1px solid var(--bd-color10);
+      .ant-drawer-header-title{
+        display: block;
+        .ant-drawer-close{
+          float: right;
+          color: var(--text-color1);
+        }
+      }
+    }
+    .ant-form{
+      .ant-form-item{
+        label{
+          color: var(--text-color1);
+        }
+        .ant-input{
+          padding: 8px 11px;
+          color: var(--text-color1);
+          border: none;
+          background-color: var(--bg-color41);
+          &::placeholder{
+            color: #9E91C2;
+          }
+        }
+        textarea.ant-input {
+          resize: none;
+        }
+        .ant-select{
+          height: 38px;
+          .ant-select-selector{
+            color: var(--text-color1);
+            border: none;
+            background-color: var(--bg-color41);
+          }
+          .ant-select-arrow{
+            color: var(--text-color9);
+          }
+        }
+      }
+    }
+    .ant-drawer-footer{
+      display: flex;
+      gap: 5px;
+      justify-content: flex-end;
+      border-top: 1px solid var(--bd-color10);
+      .ok{
+        cursor: pointer;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 24px;
+        border-radius: 4px;
+        background: #4C74FF;
+      }
+      .close{
+        cursor: pointer;
+        margin-right: 20px;
+        color: var(--text-color1);
+        font-size: 14px;
+        font-weight: 500;
+        padding: 7px 24px;
+        border-radius: 4px;
+        background: var(--bg-color26);
+        border: 1px solid var(--bd-color8);
+      }
+    }
+  }
+}
+
+.nodeInfoPopover{
+  max-width: 340px;
+  .ant-popover-title{
+    color: var(--text-color1);
+  }
+  .popover-content{
+    color: var(--text-color1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    line-height: 22px;
+    .label{
+      color: var(--text-color12)
+    }
+  }
+}

@@ -1,0 +1,174 @@
+.small-model-app {
+  font-family: HarmonyOS Sans SC;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .app-content {
+    display: flex;
+    flex: 1;
+    //border-top: 1px solid transparent;
+    overflow: hidden;
+    .app-content-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 25px;
+      overflow: hidden;
+      .content-header {
+        display: flex;
+        justify-content: space-between;
+        .label {
+          font-size: 18px;
+          font-weight: 500;
+          color: var(--text-color1);
+          svg {
+            margin-right: 8px;
+            vertical-align: bottom;
+          }
+        }
+      }
+      .content-data-tool {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        .waxberry-type {
+          display: flex;
+          .type {
+            cursor: pointer;
+            display: flex;
+            padding: 9px 12px;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-color1);
+            border-radius: 4px;
+          }
+          .type-active {
+            background: rgba(73, 57, 213, 0.3);
+          }
+        }
+        .count {
+          color: var(--text-color8);
+        }
+      }
+      .content-data-waxberry{
+        flex: 1;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        overflow: auto;
+        &::-webkit-scrollbar{
+          width: 0;
+          height: 0;
+        }
+        .card{
+          cursor: pointer;
+          position: relative;
+          width: 516px;
+          height: 398px;
+          display: flex;
+          flex-direction: column;
+          padding: 16px;
+          gap: 16px;
+          background: var(--bg-color33);
+          border-radius: 8px;
+          overflow: hidden;
+          .cardContent{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            overflow: hidden;
+            .cardInfo{
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              overflow: hidden;
+              .card-title{
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--text-color1);
+                overflow: hidden; /* 隐藏超出部分 */
+                white-space: nowrap; /* 防止换行 */
+                text-overflow: ellipsis; /* 显示省略号 */
+              }
+              .card-desc{
+                color: var(--text-color12);
+                height: 44px;
+                display: -webkit-box;            /* 使元素成为弹性容器 */
+                -webkit-box-orient: vertical;    /* 设置容器为垂直排列 */
+                -webkit-line-clamp: 2;          /* 限制显示三行 */
+                overflow: hidden;               /* 隐藏超出部分 */
+                text-overflow: ellipsis;
+                line-height: 22px;
+              }
+              .card-tags{
+                margin-top: 4px;
+                display: flex;
+                gap: 8px;
+                color: var(--text-color11);
+                .tag{
+                  padding: 2px 8px;
+                  border-radius: 4px;
+                  background: var(--bg-color34);
+                }
+              }
+            }
+            .card-footer{
+              text-align: right;
+              .button {
+                display: inline-block;
+                cursor: pointer;
+                padding: 9px 24px;
+                background: #5A4BFF;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #FFFFFF;
+                .anticon {
+                  color: inherit;
+                  margin-right: 8px;
+                }
+              }
+            }
+          }
+        }
+        .create-card{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 16px;
+          gap: 16px;
+          background: var(--bg-color33);
+          border-radius: 8px;
+          .button {
+            cursor: pointer;
+            padding: 9px 24px;
+            background: #5A4BFF;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FFFFFF;
+            .anticon {
+              color: inherit;
+              margin-right: 8px;
+            }
+          }
+          .desc{
+            font-size: 16px;
+            color:var(--text-color14);
+          }
+        }
+      }
+      .tip{
+        text-align: center;
+        color: var(--text-color6);
+      }
+    }
+  }
+}

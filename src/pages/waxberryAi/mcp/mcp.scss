@@ -1,0 +1,205 @@
+.mcp-app {
+  font-family: HarmonyOS Sans SC;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .app-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    .app-content-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 25px 25px 0 25px;
+      overflow: hidden;
+      .content-header {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--text-color1);
+        svg {
+          margin-right: 8px;
+          vertical-align: bottom;
+        }
+        .count{
+          margin-left: 5px;
+        }
+      }
+      .content-data{
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding-bottom: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+          width: 0;
+          height: 0;
+        }
+        .data{
+          width: 382px;
+          height: 236px;
+          display: flex;
+          flex-direction: column;
+          padding: 16px;
+          gap: 12px;
+          background: var(--bg-color33);
+          border-radius: 8px;
+          border: 1px solid var(--bd-color10);
+          &:hover{
+            background: var(--bg-color19);
+            border: 1px solid var(--bg-color3);
+          }
+          .title{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            .label{
+              flex: 1;
+              font-size: 16px;
+              font-weight: 500;
+              color: var(--text-color1);
+              white-space: nowrap; /* 防止文本换行 */
+              overflow: hidden; /* 防止子元素内容超出自身（如果需要单独处理每个子元素） */
+              text-overflow: ellipsis; /* 超出部分显示省略号（可选） */
+            }
+          }
+          .info{
+            flex: 1;
+            display: -webkit-box;
+            cursor: pointer;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            line-height: 24px;
+            color: var(--text-color4);
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .tags{
+            display: flex;
+            gap: 10px;
+            height: 29px;
+            .tag{
+              color: var(--text-color11);
+              padding: 5px 16px;
+              background: var(--bg-color31);
+              border-radius: 4px;
+            }
+          }
+          .promptWordFooter{
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            .view{
+              cursor: pointer;
+              display: flex;
+              gap: 4px;
+              color: #5A4BFF;
+            }
+            .publisher{
+              color: var(--text-color4);
+              font-size: 12px;
+              padding: 2px 8px;
+              border-radius: 95px;
+              background: var(--bg-color40);
+              display: flex;
+              align-items: center;
+              gap: 4px;
+            }
+          }
+        }
+      }
+      .content-data-detail{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        overflow: hidden;
+        .title{
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          .label{
+            flex: 1;
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--text-color1);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        .ant-menu{
+          background: transparent;
+          .ant-menu-item{
+            color: var(--text-color12);
+            svg{
+              vertical-align: sub;
+              margin-right: 5px;
+            }
+          }
+          .ant-menu-item-selected{
+            color: var(--text-color1);
+            &::after{
+              inset-inline: 0;
+            }
+          }
+        }
+        .overview-content{
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          overflow: hidden;
+          .detail-desc{
+            color: var(--text-color1);
+            font-size: 16px;
+            line-height: 24px;
+          }
+          .detail-label{
+            color: var(--text-color1);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+        }
+        .tool-content{
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          overflow: auto;
+          &::-webkit-scrollbar{
+            width: 0;
+            height: 0;
+          }
+          .tool-data{
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            gap: 8px;
+            border-radius: 8px;
+            border: 1px solid var(--bd-color10);
+            &:hover{
+              background: var(--bg-color11);
+              border: 1px solid var(--bg-color3);
+              .data-title{
+                color: #5A4BFF;
+              }
+            }
+            .data-title{
+              color: var(--text-color1);
+              font-size: 16px;
+              font-weight: 500;
+            }
+            .data-desc{
+              color: var(--text-color12);
+            }
+          }
+        }
+      }
+    }
+  }
+}

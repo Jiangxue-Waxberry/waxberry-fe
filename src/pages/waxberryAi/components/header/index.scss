@@ -1,0 +1,71 @@
+.app-header{
+  height: 62px;
+  display: flex;
+  padding: 12px 24px;
+  background: var(--bg-color5);
+  svg{
+    color: var(--text-color1);
+  }
+  .header-content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .search{
+      display: flex;
+      align-items: center;
+      width: 600px;
+      padding: 4px 20px;
+      border-radius: 4px;
+      background: var(--bg-color6);
+      svg{
+        font-size: 16px;
+        color: var(--text-color1);
+      }
+      input{
+        color: var(--text-color2);
+        border: none;
+        background-color: transparent;
+        &::placeholder{
+          color: var(--text-color2);
+        }
+        &:focus{
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .header-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-color1);
+    .userName{
+      font-size: 18px;
+      .anticon{
+        font-size: 10px;
+        margin-left: 5px;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.ant-dropdown-menu{
+  background-color: var(--bg-color9) !important;
+  border: 1px solid var(--bd-color2);
+  .ant-dropdown-menu-item-active{
+    background-color: var(--bg-color10) !important;
+  }
+  .ant-dropdown-menu-item{
+    min-width: 120px;
+    color: var(--text-color1) !important;
+    .delete{
+      color: #BC1919;
+    }
+    svg{
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}

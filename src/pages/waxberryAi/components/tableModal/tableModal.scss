@@ -1,0 +1,93 @@
+.waxberry-custom-modal {
+  .table-content {
+    color: var(--text-color1);
+    padding: 15px;
+    overflow: hidden;
+    .table-setting{
+      width: 340px;
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      .title{
+        color: #B6B7EA;
+      }
+      .item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .ant-input-number-outlined{
+          width: 120px;
+          border: none;
+          background: var(--bg-color44);
+          .ant-input-number-handler-wrap {
+            width: 22px;
+            opacity: 1;
+            background-color: transparent;
+            .ant-input-number-handler{
+              border-inline-start: 1px solid var(--bd-color10);
+            }
+            .ant-input-number-handler-up-inner, .ant-input-number-handler-down-inner{
+              color: var(--text-color1);
+            }
+            .ant-input-number-handler-down{
+              border-block-start: 1px solid var(--bd-color10);
+            }
+          }
+          .ant-input-number-input{
+            color: var(--text-color1);
+          }
+        }
+      }
+    }
+    .table-edit{
+      width: fit-content;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--bd-color13);
+      overflow: auto;
+      .table-edit-content{
+        display: flex;
+        .table-rows{
+          display: flex;
+          flex-direction: column;
+          .table-row{
+            display: flex;
+            .table-col{
+              width: 160px;
+              border-right: 1px solid var(--bd-color13);
+              border-bottom: 1px solid var(--bd-color13);
+              .ant-input{
+                color: var(--text-color1);
+                padding: 10px;
+                height: 38px;
+                border: none;
+                background-color: transparent;
+                &::placeholder{
+                  color: var(--text-color9);
+                }
+              }
+            }
+          }
+        }
+        .table-col-add{
+          padding: 9px;
+          border-bottom: 1px solid var(--bd-color13);
+          svg{
+            cursor: pointer;
+          }
+        }
+      }
+      .table-row-add{
+        padding: 10px;
+        svg{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.ant-dropdown-menu-vertical{
+  max-height: 400px;
+}

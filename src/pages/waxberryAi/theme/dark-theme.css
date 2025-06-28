@@ -1,0 +1,105 @@
+.dark-theme{
+    --text-color1: #FFFFFF;
+    --text-color2: #A69AD1;
+    --text-color3: #9A83EB;
+    --text-color4: #BFB4DF;
+    --text-color5: #FFFFFF;
+    --text-color6: #9E9AE2;
+    --text-color7: #FFFFFF;
+    --text-color8: #C4BED7;
+    --text-color9: #C9CDD4;
+    --text-color10: #8280D1;
+    --text-color11: #B6B7EA;
+    --text-color12: #B6B7EA;
+    --text-color13: #BEBCDB;
+    --text-color14: #9E9AE2;
+    --text-color15: #BFB4DF;
+    --text-color16: #FFFFFF;
+    --text-color17: #D3D3E2;
+    --text-color18: #9E91C2;
+    --text-color19: #565392;
+
+    --bd-color1: #343378;
+    --bd-color2: #453393;
+    --bd-color3: #573DBB;
+    --bd-color4: #5453B0;
+    --bd-color5: #413C98;
+    --bd-color6: #3D3280;
+    --bd-color7: #493BD7;
+    --bd-color8: #6261AF;
+    --bd-color9: #2E2261;
+    --bd-color10:#343378;
+    --bd-color11:#1C1B46;
+    --bd-color12:#2B2A67;
+    --bd-color13: #6261AF;
+    --bd-color14:#323174;
+    --bd-color15:#36357E;
+
+    --bg-color1: #161540;
+    --bg-color2: #1E1858;
+    --bg-color3: #5a4bff;
+    --bg-color4: #23215A;
+    --bg-color5: #0A0929;
+    --bg-color6: #232054;
+    --bg-color7: #573DBB;
+    --bg-color8: #201B53;
+    --bg-color9: #232152;
+    --bg-color10: #453393;
+    --bg-color11: #18193D;
+    --bg-color12: #252450;
+    --bg-color13: #343378;
+    --bg-color14: #403E83;
+    --bg-color15: #4B3BDB;
+    --bg-color16: #342C7E;
+    --bg-color17: #262157;
+    --bg-color18: #42469E;
+    --bg-color19: #222152;
+    --bg-color20: #232152;
+    --bg-color21: #2C296A;
+    --bg-color22: #5849FC;
+    --bg-color23: #36337E;
+    --bg-color24: #2D2580;
+    --bg-color25: #222152;
+    --bg-color26: #2F2D66;
+    --bg-color27: #423E9F;
+    --bg-color28: #1D1C47;
+    --bg-color29: #2F2E75;
+    --bg-color30: rgba(73, 57, 213, 0.3);
+    --bg-color31: #1E175E;
+    --bg-color32: #221F5F;
+    --bg-color33: #1A1746;
+    --bg-color34: #1E175E;
+    --bg-color35: #222152;
+    --bg-color36: #1E175E;
+    --bg-color37: #141335;
+    --bg-color38: #18193D;
+    --bg-color39:#39338A;
+    --bg-color40:#36327E;
+    --bg-color41: #222152;
+    --bg-color42: #2F2D66;
+    --bg-color43:#1D1C47;
+    --bg-color44: #2F2D66;
+    --bg-color45:#36327E;
+    --bg-color46:#343370;
+    --bg-color47:#28285A;
+    --bg-color48: #161540;
+    --bg-color49: #2F2D66;
+    --bg-color50: #36337E;
+    --bg-color51: #1D1C47;
+    --bg-color52:#1A1746;
+
+    --icon-left-linear: linear-gradient(269deg, rgba(22, 21, 64, 0) 12%, rgba(22, 21, 64, 0.741) 50%, #161540 90%);
+    --icon-right-linear: linear-gradient(88deg, rgba(22, 21, 64, 0) 1%, rgba(22, 21, 64, 0.741) 38%, #161540 78%);
+    --right-arrow-linear:linear-gradient(270deg, #0A092A 11%, rgba(10, 9, 41, 0) 151%);
+    --left-arrow-linear:linear-gradient(90deg, #0A092A 11%, rgba(10, 9, 41, 0) 151%);
+}
+
+.dark-theme .app-menu,.app-menu-small{
+    background: url("../img/left_bj.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.dark-theme .right_bj{
+    background: url("../img/right_bj.jpg") no-repeat;
+    background-size: 100% 100%;
+}

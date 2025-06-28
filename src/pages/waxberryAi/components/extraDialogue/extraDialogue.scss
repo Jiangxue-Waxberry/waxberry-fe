@@ -1,0 +1,68 @@
+.extra-dialogue{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text-color1);
+  max-height: 224px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--bg-color26);
+  border: 1px solid var(--bd-color1);
+  overflow: auto;
+  /* 滚动条轨道 */
+  &::-webkit-scrollbar-track {
+    background: var(--bg-color33);
+    border-radius: 10px;
+  }
+
+  /* 滚动条滑块 */
+  &::-webkit-scrollbar-thumb {
+    background: var(--bg-color18);
+    border-radius: 10px;
+  }
+
+  /* 滚动条滑块悬停状态 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-color18);
+  }
+
+  /* 滚动条角落（当同时有水平和垂直滚动条时） */
+  &::-webkit-scrollbar-corner {
+    background: var(--bg-color33);
+  }
+
+  .table-container{
+    width: fit-content;
+    position: relative;
+    &:hover .close{
+      display: block;
+    }
+    .close{
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background: var( --bg-color44);
+
+    th, td {
+      padding: 6px 13px;
+      border: 1px solid #8BB2FF;
+    }
+
+    tr {
+      border-top: 1px solid #8BB2FF;
+    }
+    input{
+      width: 80px;
+      color: var(--text-color1);
+      background: var(--bg-color23);
+    }
+  }
+}

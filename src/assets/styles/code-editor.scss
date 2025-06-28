@@ -1,0 +1,81 @@
+.code-editor-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .terminalContainer{
+    
+    width: 100%;
+    background-color: #1e1e1e;
+    padding:16px;
+    #terminalRef{
+      height: 100px;
+      width: 100%;
+      border-radius: 8px;
+      .terminal{
+        height: 100%;
+        padding: 8px;
+      }
+      .xterm .xterm-viewport{
+        overflow-y: auto;
+        border-radius: 8px;
+      }
+
+
+    }
+  }
+  .saveFunctionContainer{
+    width: 100%;
+    background-color: #1e1e1e;
+    height: 64px;
+    display: flex;
+    padding:12px;
+    align-items: center;
+    justify-content: end;
+    .ant-btn{
+       border-radius: 2px;
+    }
+    .ant-btn-variant-outlined{
+      background: #2F2D66;
+      border: 1px solid #6261AF;
+      color:#fff
+    }
+    
+  }
+  .nullContainer{
+    display: none;
+  }
+  // 编辑器工具栏
+  .editor-toolbar {
+    padding: 8px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .toolbar-left {
+      display: flex;
+      gap: 8px;
+    }
+
+    .toolbar-right {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  // 编辑器主体
+  .monaco-editor {
+    padding: 8px 0;
+  }
+
+  // 暗色主题
+  &.dark-theme {
+    border-color: #434343;
+
+    .editor-toolbar {
+      background-color: #262626;
+      border-color: #434343;
+    }
+  }
+}

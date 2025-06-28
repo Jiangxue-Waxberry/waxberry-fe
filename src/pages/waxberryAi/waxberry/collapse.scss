@@ -1,0 +1,49 @@
+.accordion-container {
+  background: var(--bg-color25);
+  border-radius: 8px;
+  .accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color1);
+    .anticon{
+      color: inherit;
+      font-size: 10px;
+    }
+  }
+
+  .accordion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    .task{
+      display: flex;
+      .name{
+        color: var(--text-color1);
+        flex-shrink: 0;
+      }
+      .desc{
+        color: var(--text-color6);
+      }
+      ul{
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.accordion-container.active{
+  .accordion-content {
+    height: auto;
+    padding: 0 15px 15px 15px;
+  }
+}

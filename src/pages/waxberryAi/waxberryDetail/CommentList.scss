@@ -1,0 +1,200 @@
+.comment-container {
+    height: 100%;
+    padding: 24px;
+    padding-right: 0px;
+    color: var(--text-color1);
+    display: flex;
+    flex-direction: column;
+    .inputDiv{
+        border-radius: 16px;
+        border: 1px solid #8B81FF;
+        margin-top:12px;
+        background: var(--bg-color9);
+        .inputFileCascader{
+          display: block;
+          height: 0;
+          overflow: hidden;
+        }
+        .input{
+          display: flex;
+          gap: 10px;
+          padding: 20px;
+          flex-direction: column;
+          textarea{
+            color: var(--text-color2);
+            font-size: 16px;
+            resize: none;
+            border: none;
+            background-color: transparent;
+            padding-left: 0;
+            &::placeholder{
+              color: var(--text-color2);
+            }
+            &::-webkit-scrollbar{
+              width: 0;
+              height: 0;
+            }
+          }
+          textarea:focus{
+            box-shadow: none;
+          }
+          .operate {
+            display: flex;
+            justify-content: space-between;
+            .link {
+              color: var(--text-color1);
+              display: flex;
+              align-items: center;
+              svg{
+                cursor: pointer;
+                margin-right: 5px;
+              }
+            }
+            .send{
+              cursor: not-allowed;
+              color: #5036B1;
+            }
+            .sendActive{
+              cursor: pointer;
+              color: #3461E2;
+            }
+          }
+        }
+      }
+
+      .comment-header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        margin-bottom: 16px;
+        padding-right: 24px;
+        
+      }
+      .childComment{
+        display: flex;
+        flex-direction: column;
+       flex-grow: 1;
+       padding-right: 24px;
+      }
+      .comment-list {
+        display: flex;
+        flex-direction: column;
+       flex-grow: 1;
+       overflow-y:auto;padding-right:24px
+
+      }
+      .divideInfo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .commentCount{
+          padding:12px 0
+        }
+        .divideLine{
+          height: 1px;
+          background-color:var(--bg-color20);
+          margin-bottom: 12px;
+        }
+      }
+     .noComment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       flex-grow: 1;
+      }
+      
+      .comment-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 16px;
+        border-radius: 8px;
+        color: var(--text-color1);
+        transition: background-color 0.3s;
+      }
+      
+      .comment-item:hover {
+        background-color:var(--bg-color20);
+      }
+      
+      .comment-item.active {
+        background-color:var(--bg-color20);
+      }
+      
+      .comment-left {
+        display: flex;
+        gap: 6px;
+        flex: 1;
+      }
+      
+      .avatar-placeholder {
+        width: 24px;
+        height: 24px;
+        background-color: gray;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      
+      .comment-text {
+        .username {
+       
+        margin-bottom: 4px;
+        font-size: 12px;
+        }
+        .fileFrame{
+          min-width:120px;
+          color: var(--text-color1);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          border-radius: 6px;
+          padding: 8px 12px;
+          background: var(--bg-color12);
+          border: 1px solid var(--bd-color1);
+          .fileName{
+            font-size: 16px;
+            font-weight: 500;
+          }
+          .fileCount{
+            font-size: 14px;
+            font-weight: 500;
+          }
+          .anticon{
+            font-size: 12px;
+            margin-left: auto;
+          }
+          .img{
+            width: 22px;
+            height: 22px;
+          }
+        }
+        
+      }
+      
+      .comment-right {
+        display: flex;
+       
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+      }
+      
+      .icon-text {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .ant-radio-button-wrapper{
+        background-color: var(--bg-color5);
+        color: var(--text-color1);
+        border: 1px solid var(--bg-color5);
+      }
+      .ant-radio-button-wrapper:not(:first-child)::before{
+        background-color: var(--bg-color5);
+      }
+  }
+  
+  
+  

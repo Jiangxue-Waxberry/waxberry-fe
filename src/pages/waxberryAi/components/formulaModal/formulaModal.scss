@@ -1,0 +1,79 @@
+.waxberry-custom-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+  .waxberry-modal-box {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    border-radius: 8px;
+    background: var(--bg-color25);
+    overflow: hidden;
+    .waxberry-modal-title {
+      color: var(--text-color1);
+      padding: 15px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid var(--bd-color1);
+      .anticon {
+        cursor: pointer;
+        color: var(--text-color1);
+        float: right;
+        font-size: 14px;
+        margin-top: 7px;
+      }
+    }
+    .formula-content {
+      math-field{
+        font-size: 18px;
+        color: var(--text-color1);
+        width: 1300px;
+        height: 400px;
+        margin: 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: var(--bg-color43);
+        overflow: hidden;
+      }
+
+      --contains-highlight-background-color: transparentize();
+    }
+    .waxberry-modal-footer{
+      text-align: center;
+      padding: 15px 20px;
+      border-top: 1px solid var(--bd-color1);
+      .ok{
+        display: inline-block;
+        cursor: pointer;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 24px;
+        border-radius: 4px;
+        background: #4C74FF;
+      }
+      .close{
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 20px;
+        color: var(--text-color1);
+        font-size: 14px;
+        font-weight: 500;
+        padding: 7px 24px;
+        border-radius: 4px;
+        background: var(--bg-color26);
+        border: 1px solid var(--bd-color8);
+      }
+    }
+  }
+  .footer-right {
+    text-align: right !important;
+  }
+}

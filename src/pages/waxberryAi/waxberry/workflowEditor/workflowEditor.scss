@@ -1,0 +1,49 @@
+.flow-wrapper{
+  flex: 1;
+  .react-flow{
+    .custom-node{
+      width: 180px;
+      padding: 4px 10px;
+      background: var(--bg-color26);
+      border-radius: 4px;
+      border: 1px solid #6261AF;
+      .node-name{
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        .label{
+          color: var(--text-color1);
+          flex: 1;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .operate{
+          margin-left: auto;
+          display: flex;
+          gap: 4px;
+          img{
+            cursor: pointer;
+          }
+        }
+      }
+      .react-flow__handle{
+        background-color: #8B81FF;
+        border: 1px solid #8B81FF;
+      }
+    }
+    .react-flow__controls{
+      flex-direction: row;
+      padding: 4px 8px;
+      border-radius: 4px;
+      button{
+        background: #222152;
+        border: none;
+        color: var(--text-color1);
+      }
+    }
+    .react-flow__attribution{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.file-box{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .file-operate{
+    color: var(--text-color1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 8px 12px;
+    background: var(--bg-color12);
+    border: 1px solid var(--bd-color1);
+    .fileName{
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .fileCount{
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .anticon{
+      font-size: 12px;
+      margin-left: auto;
+    }
+    .img{
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
